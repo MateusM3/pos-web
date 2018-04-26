@@ -53,9 +53,12 @@ function enviar() {
         document.getElementById("cadastro").reset();
     }
 }
-var nome = prompt("Insira o nome:");
 
-while (nome == ""){
-    nome = prompt("Insira o nome:");
+// Calcula a idade e aplica no campo
+var anoNascimento = prompt("Digite o ano que você nasceu:");
+
+while (anoNascimento == ""){
+    anoNascimento = prompt("Para continuar - Digite o ano que você nasceu:");
 }
 
+document.getElementById("idade").value = (2018 - parseInt(anoNascimento));
