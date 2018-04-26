@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Targs de Formularios</title>
+</head>
+<body>
+    <form method="post" action="">
+        <label>Nome:
+            <input type="text" name="nome">
+        </label>
+        <label for="idade">Idade</label>
+        <input type="text" name="idade" id="idade">
+    </form>
+
+    <form method="post" action="">
+        <input type="checkbox" name="a" value="a">
+        <input type="checkbox" name="b" value="b">
+        <br>
+        <label> Estado Civil:
+            Solteiro: <input type="radio" name="ES" value="Solteiro">
+            Casado: <input type="radio" name="ES" value="Casado">
+        </label>
+        <br>
+        <input type="hidden" name="captcha" value="teste">
+        <input type="file">
+        <input type="password">
+    </form>
+
+    <!--SOMENTE HTML 5-->
+    <form method="post" action="">
+        Telefone<input type="tel">
+        <br>
+        Busaca<input type="search">
+        <br>
+        E-mail<input type="email">
+        <br>
+        Url<input type="url">
+        <br>
+        Cor<input type="color">
+        <br>
+        Numero<input type="number">
+        <br>
+        Range<input type="range">
+        <br>
+        Data<input type="date">
+        <br>
+    </form>
+
+    <form method="post">
+        <p>Formulario de Data e Hora</p>
+        <input type="date">
+        <input type="datetime-local">
+        <!--<input type="datetime">-->
+        <input type="month">
+        <input type="week">
+        <input type="time">
+    </form>
+
+
+</body>
+</html>

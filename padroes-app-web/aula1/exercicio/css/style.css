@@ -1,0 +1,34 @@
+/*Geral*/
+header img {width:100%;height:220px}
+header nav {width: 100%;height:40px;background-color:#210059;text-align: center;padding-top: 10px}
+header nav a {font-size: 25px;margin-left:15px;color: #FFFFFF;text-transform: uppercase}
+header nav .container-seach {float: right;height: 40px;}
+header nav .container-seach #pesquisar{width:200px;height: 30px;border: 2px solid}
+header nav .container-seach #seach {color:#FFFFFF;background-color: #6d5aff;width:100px;height: 30px;border: 2px solid}
+header nav .container-seach #seach:hover {color:#6d5aff;background-color: #FFFFFF;}
+main {background-image: url("https://feab.files.wordpress.com/2015/09/fundo-azul.jpg")}
+main article section {padding: 25px;width: 80%;margin: 0 auto ; border: 1px solid #6d5aff;background-color: #FFFFFF}
+main article section h2 {text-align: center;text-transform: uppercase;font-size: 25px;color: #210059}
+main article section h3 {text-transform: uppercase;font-size: 20px;color: #1a0043}
+main article section h4 {color: #1dbfdb}
+main aside {text-align: right}
+footer {background-color: #210059;text-align: center;}
+footer span {color: #FFFFFF;font-size: 25px;text-transform: uppercase}
+/* Home */
+main article section details { font-style: italic;}
+main article section p {padding: 10px;line-height: 15px}
+main article section video {width: 50%}
+main article section picture {width: 50%}
+main article section #topo {float: right}
+/* Formulario */
+main article section form {width: 70%;margin: 0 auto;text-align: center}
+main article section form fieldset {margin-top: 20px;padding-top: 10px}
+main article section form fieldset legend {text-transform: uppercase}
+main article section form fieldset label {font-weight: bold}
+main article section form fieldset label .require{color: red}
+main article section form fieldset label input{height: 20px;width: 200px;margin-left: 10px;margin-bottom: 10px}
+main article section form button {width: 100px;height: 50px;background-color: #1dbfdb;color: #FFFF;text-transform: uppercase;font-weight: bold}
+main article section form button:hover{background-color: #FFFFFF;color: #1dbfdb;}
+main article section form .content-error {background-color: #FFFFFF;border: 1px solid red;width: 100%;height: auto;color: red;padding-top: 25px;margin-top: 20px;margin-bottom:25px}
+main article section form .content-error #error {text-transform: uppercase;font-weight: bold}
+main article section form .content-sucess {padding:10px;background-color: #FFFFFF;border: 1px solid green;width: 100%;height: auto;color: green;padding-top: 25px;margin-top: 20px;margin-bottom:25px}

@@ -1,0 +1,39 @@
+h1 {font-family: "Comic Sans";color: red;}
+b {color: blue}
+
+#titulo_principal {color: darkblue}
+.direita {text-align: right}
+.centro {text-align: center}
+.fundoamarelo {background: gold}
+
+div h1{color: rgba(233, 34, 59, 0.67)
+}
+h3 , b {color: rgba(169, 229, 224, 0.56)
+}
+p {
+    font-size: xx-small;
+    text-transform: uppercase;
+    line-height: 40px;
+}
+.normal{
+    font-style: normal;
+
+}
+.ob{
+    font-style: oblique;
+
+}
+.italico{
+    font-style: italic;
+
+}
+a {
+    text-decoration: none;
+}
+body {
+    /*background-color: #b0b0b0;*/
+    background-image: url("https://www.mozilla.org/media/img/logos/firefox/logo-quantum-high-res.cfd87a8f62ae.png"),url("http://2.bp.blogspot.com/-LBSs_2gYEgE/VcYumNyOkNI/AAAAAAAAA_k/oCOg8HXH2yw/s1600/firefox3.png") ;
+    background-repeat: no-repeat,repeat;
+    background-attachment: fixed,scroll;
+    background-position: center;
+}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Outuput</title>
+</head>
+<body>
+    <form method="post" action="" oninput = "saida.value = parseInt(n1.value) + +parseInt(n2.value)">
+        <input type="number" name="n1">
+        <input type="number" name="n2"> =
+        <output name="saida" for="n1n2"></output>
+    </form>
+
+    <form method="post" action="">
+        <label> Cidades:
+            <select name="cidades">
+                <option value="pg">Ponta Grossa</option>
+                <option value="gp">Guarapuava</option>
+                <option value="cb">Curitiba</option>
+            </select>
+        </label>
+    </form>
+
+    <form action="">
+        <label>Carros:
+            <select name="carros">
+                <optgroup label="Ford">
+                    <option value="fiesta">Fiesta</option>
+                    <option value="focus">Focus</option>
+                </optgroup>
+
+                <optgroup label="Cherolet">
+                    <option value="fiesta">Cruze</option>
+                    <option value="focus">Cobalt</option>
+                </optgroup>
+
+            </select>
+        </label>
+    </form>
+
+    <form method="post" action="">
+        <input list="nomes">
+        <datalist id="nomes">
+            <option value="John">John</option>
+            <option value="James">James</option>
+            <option value="Kelvin">Kelvin</option>
+            <option value="Mike">Mike</option>
+        </datalist>
+    </form>
+
+    <form method="post" action="">
+        <textarea name="descricao" cols="20" rows="20"></textarea>
+        <button type="submit">Enviar</button>
+        <button type="reset">limpar</button>
+
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label>Nome: <input type="text" name="nome" disabled></label>
+            <label>Idade: <input type="text" name="idade" readonly></label>
+            <label>CPF: <input type="text" name="cpf" required></label>
+            <label>RG: <input type="text" name="rg" maxlength="10"></label>
+            <label>Telefone: <input type="text" name="fone" pattern="\([0-9]+\)"></label>
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

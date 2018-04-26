@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+<body>
+    <header>
+        <img src="http://aeditora.com.br/wp-content/uploads/2017/06/inoveh_web.jpg" alt="">
+        <nav>
+            <a href="../../index.html">Home</a>
+            <a href="#">Cadastro</a>
+            <div class="container-seach">
+                <input type="search" name="pesquisar" id="pesquisar">
+                <button id="seach">PESQUISAR</button>
+            </div>
+        </nav>
+        <a name="topo"></a>
+    </header>
+    <main>
+        <article>
+            <section>
+                <h2>Cadastro</h2>
+                <hr>
+                <form method="post" id="cadastro">
+                    <fieldset>
+                        <label for="nome">Nome <span class="require">*</span>: <input type="text" name="nome" id="nome"></label><br>
+                        <legend>Informações Pessoais</legend>
+                        <label for="data-nascimento">Data de Nascimento <span class="require">*</span><input type="date" id="data-nascimento"></label><br>
+                        <label for="idade">Idade: <span class="require">*</span><input type="number" name="idade" id="idade" required></label><br>
+                        <label for="cpf">CPF: <span class="require">*</span><input type="text" name="cpf" id="cpf"></label><br>
+                        <label for="rg" >RG: <input type="text" name="rg" id="rg" maxlength="10"></label>
+                        <br>
+                        <label for="fone">Telefone: <span class="require">*</span><input type="tel" name="fone" id="fone" pattern="\([0-9]+\)"></label><br>
+                        <label for="sexo"> Sexo: <span class="require">*</span>
+                            <select name="sexo" id="sexo" required>
+                                <option value="">Selecione</option>
+                                <option value="feminino">Feminino</option>
+                                <option value="mascolino">Mascolino</option>
+                            </select>
+                        </label><br>
+                        <label>
+                            Estado Civil: (opcional) <br>
+                            Solteiro: <input type="radio" name="estado-civil" value="Solteiro">
+                            Casado: <input type="radio" name="estado-civil" value="Casado">
+                        </label><br>
+                        <label>
+                            Site: (opcional) <input type="url" name="site">
+                        </label>
+                        <br><br>
+                        <label for="sobre"> Fale mais sobre você: <br>
+                            <textarea name="sobre" id="sobre" cols="50" rows="5"></textarea>
+                        </label>
+
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Endereço</legend>
+                        <address>
+                            <label>E-mail: <span class="require">*</span>
+                                <input name="email" type=”email” required >
+                            </label><br>
+                            <label>CEP: <span class="require" >*</span>
+                                <input type="text" name="cep" id="cep" required>
+                            </label><br>
+                            <label>Rua: <span class="require">*</span>
+                                <input type="text" name="rua" required>
+                            </label><br>
+                            <label>Complemento: (opcional)
+                                <input type="text" name="rua" id="rua" required>
+                            </label><br>
+                            <label>Bairro: <span class="require">*</span>
+                                <input type="text" name="bairro" id="bairro" required>
+                            </label><br>
+                            <label>Cidade: <span class="require">*</span>
+                                <input type="text" name="cidade" id="cidade" required>
+                            </label>
+                            <br>
+                            <label>Estado: <span class="require">*</span>
+                                <input type="text" name="estado" id="uf" required>
+                            </label>
+                        </address>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Acesso ao sistema</legend>
+                        <label for="login">Login <span class="require">*</span></label>
+                        <input type="text" id="login" required>
+
+                        <label for="senha">Senha: <span class="require">*</span></label>
+                        <input type="password" id="senha" ><br>
+                        <label for="foto">Foto de perfil: (opcional)</label>
+                        <input type="file" id="foto">
+                    </fieldset>
+
+                    <div class="content-error" id="content-error" style="display: none">
+                        <span>Os seguintes campos estão incorretos:</span><br>
+                        <ul id="error"></ul>
+                    </div>
+
+                    <div class="content-sucess" id="sucess" style="display: none">
+                        <span id="msg"></span><br>
+                        <span>seu cadastro efetuado com sucesso !!!</span>
+                    </div>
+
+                    <button type="button" onclick="enviar()" id="send">ENVIAR</button>
+                    <button type="reset">limpar</button>
+
+
+                </form>
+            </section>
+        </article>
+        <aside>
+            <audio src="../../media/musica.mp3" controls autoplay></audio>
+        </aside>
+    </main>
+    <footer>
+        <hr>
+        <script src="../../js/script.js"></script>
+        <span>Desenvolvido por - Mateus Junior Monteiro</span>
+    </footer>
+</body>
+</html>
